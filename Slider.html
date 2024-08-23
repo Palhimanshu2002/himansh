@@ -1,0 +1,61 @@
+<!doctype html >
+
+
+<html>
+<meta http-equiv="efresh" content="3">
+
+	<head><title>slider</title>
+
+<h1>Web Animation</h1>
+
+</head>
+
+<style>
+
+@keyframes changepic
+{background:red;}
+
+
+#banner
+{width:500%;
+background:ed;}
+
+@keyframes runbanner
+
+{
+10%{left:0%;}
+20%{left:-19.94%;}
+30%{left:-19.94%;}
+40%{left:-39.88%;}
+50%{left:-39.88%;}
+60%{left:-59.82%;}
+70%{left:-59.82%;}
+
+}
+
+.picstyle
+
+{width:19.83%px;
+height:600px;
+position:relative;
+top:0px;
+left:0px;
+margin:5px;
+//box-shadow:10px 10px 10px gray;
+animation:runbanner 28s infinite alternate;
+
+}
+
+</style>
+
+<body>
+<div id="banner">
+<img src="images/p2.jpg" class="picstyle">
+<img src="images/p3.jpg" class="picstyle">
+<img src="images/p4.jpg" class="picstyle">
+<img src="images/p5.jpg" class="picstyle">
+</div>
+
+
+</body>
+</html>

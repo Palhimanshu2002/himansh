@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+*
+{
+  font-family: 'poppins regular';
+}
+#mybutton
+{
+  width: 40vw;
+  height: 12vw;
+  border-radius: 15vw;
+  border: none;
+  margin-left: 8vw;
+  cursor: pointer;
+  font:bold;
+ 
+}
+
+#tb
+{
+  text-align: center;
+  color: aliceblue;
+  font-size: 35px;
+ 
+}
+
+#mynumber .input-data input{
+  border: none;
+  border-bottom: 2px solid silver;
+
+  
+}
+
+#mynumber
+{
+  width: 24vw;
+  height: 10vw;
+  border-radius: 15vw;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+#explain
+{
+  text-align: center;
+  margin-top: 15vw;
+}
+
+#img
+{
+  width: 70vw;
+  margin-left: 50px;
+}
+</style>
+
+<body style="background:radial-gradient(#009ffd,#2a2a72)">
+<div id="tb"><h4 style="font-family: poppins regular;" id="Table" >TABLE MAKER</h4></div>
+
+    <p style="padding: 3px; width: 100%; margin:auto;color:white;font-family: arial black;">
+    
+    Number &nbsp; <input id="mynumber" size="10" type="number"  min="2" max="100 " >
+    <button id="mybutton">&nbsp; Create Table
+    </button></p>
+    
+  <div id="box" style="background:linear-gradient(#09203f,#537895);margin:auto;text-align:center;font-family: Arial black;font-size: 25px;color:white;        
+  box-shadow:10px 10px 10px rgb(255, 12, 12);width:70%;height:450px;border:1px black;border-radius:5vw;margin-top: 10vw;"> 
+  </div>
+
+ <div id="explain"> <h4> IT A TABLE GENERATOR APP USING JAVASCRIPT,YOU CAN SEE THE PROGRAM BELOW </h4> </div>
+ <img src="images/jsp1.png" alt="" id="img">
+
+  <script>
+
+var a = 1
+var m;
+
+var b = document.getElementById("box")
+var d = document.getElementById("mynumber")
+var n = document.getElementById("mybutton")
+
+
+n.onclick=function()
+{
+m = "Table of "+d.value+"<br/>"
+
+a=1
+   do{
+    m+= d.value+ " X " + a + " = " +d.value *a+ "</br>"
+
+    a++
+
+   }while(a<=10)
+
+   b.innerHTML= m
+}
+  </script>
+
+    
+
+    
+</body>
+</html>

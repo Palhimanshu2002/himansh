@@ -1,0 +1,72 @@
+/*
+body{background:teal;}
+*/
+
+@keyframes ani1
+{
+from{background:red;transform:rotate(0deg) scale(1);left:100px;}
+to{background:lightblue;transform:rotate(720deg) scale(2);left:1200px;}
+}
+
+@keyframes blink1
+{
+from{opacity:0;color:green;left:-500px;}
+to{opacity:100;color:Purple;left:105%;}
+}
+
+@keyframes blink2
+{
+from{transform:scale(50) rotate(0)}
+to{transform:scale(1) rotate(360)}
+}
+
+#pal{
+color:Black;
+font-size:50px;
+font-family:Arial black;
+opacity:100%;
+position:relative;
+left:200px;
+top:350px;
+animation:blink1 5s infinite alternate;
+}
+
+
+
+
+#box{
+width:200px;
+height:200px;
+background-color:cyan;
+box-shadow: 2px 2px 2px gray;
+animation:ani1 2s infinite alternate;
+position:relative;
+left:100px;
+top:200px;
+border-radius:50%;
+}
+
+#cod{
+color:Black;
+font-size:50px;
+font-family:Arial black;
+opacity:100%;
+position:absolute;
+left:50%;
+top:700px;
+animation:blink2 2s alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

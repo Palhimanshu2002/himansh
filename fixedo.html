@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixedo - The Car</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom CSS styles */
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+
+        .search-box {
+            margin-right: 20px;
+        }
+
+        .feature-card {
+            margin-bottom: 30px;
+            transition: transform 0.2s;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card:hover {
+            cursor: pointer;
+            transform: translateY(-5px);
+        }
+
+        .feature-card .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .feature-card .card-body {
+            padding: 20px;
+        }
+
+        .feature-card h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .carousel-item {
+            height: 500px; /* Adjust the height as needed */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-caption {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .footer .footer-links a {
+            color: #fff;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+
+        .footer .footer-links a:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer .footer-search input {
+            width: 200px;
+            border-radius: 20px;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        html {
+  scroll-behavior: smooth;
+}
+
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Fixedo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0 ml-auto search-box">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#features">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Feel free to contact us with any questions or inquiries.</p>
+        <ul>
+          <li>Email: info@fixedo.com</li>
+          <li>Phone: 123-456-7890</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Carousel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image: url(images/Web\ Banner-1.jpg);">
+      <!--
+        <div class="carousel-caption text-center">
+        <h1>Welcome to Fixedo</h1>
+        <p>Your ultimate driving experience begins here.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+     -->
+    </div>
+    <div class="carousel-item" style="background-image: url('images/Web\ Banner-2.jpg');">
+      <!--
+      <div class="carousel-caption text-center">
+        <h1>Explore Our Features</h1>
+        <p>Discover the reliability, performance, and comfort of Fixedo.</p>
+        <a class="btn btn-primary btn-lg" href="#features" role="button">View Features</a>
+      </div>
+      -->
+    </div>
+
+    <div class="carousel-item" style="background-image: url('images/Web\ Banner-3.jpg');">
+      <!--
+      <div class="carousel-caption text-center">
+        <h1>Explore Our Features</h1>
+        <p>Discover the reliability, performance, and comfort of Fixedo.</p>
+        <a class="btn btn-primary btn-lg" href="#features" role="button">View Features</a>
+      </div>
+      -->
+    </div>
+
+    <div class="carousel-item" style="background-image: url('images/Web\ Banner-4.jpg');">
+      <!--
+      <div class="carousel-caption text-center">
+        <h1>Explore Our Features</h1>
+        <p>Discover the reliability, performance, and comfort of Fixedo.</p>
+        <a class="btn btn-primary btn-lg" href="#features" role="button">View Features</a>
+      </div>
+      -->
+    </div>
+
+    <div class="carousel-item" style="background-image: url('images/Web\ Banner-5.jpg');">
+      <!--
+      <div class="carousel-caption text-center">
+        <h1>Explore Our Features</h1>
+        <p>Discover the reliability, performance, and comfort of Fixedo.</p>
+        <a class="btn btn-primary btn-lg" href="#features" role="button">View Features</a>
+      </div>
+      -->
+    </div>
+    <!-- Add more carousel items as needed -->
+  </div>
+</div>
+
+<!-- Features Section -->
+<section id="features" class="container mt-5">
+  <h2 class="text-center mb-4">Features</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card feature-card" onclick="location.href='#reliability'">
+        <img src="images/438401_MostReliableLuxuryCarst_Hero_2x.jpg" class="card-img-top" alt="Reliability">
+        <div class="card-body">
+          <h5 class="card-title">Reliability</h5>
+          <p class="card-text">Fixedo is built with the highest quality materials, ensuring reliability and durability. Our vehicles undergo rigorous testing to ensure they can withstand any road conditions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card feature-card" onclick="location.href='#performance'">
+        <img src="images/6670d1_8945a6b487d147f5b7af6bc08244f790~mv2.jpg" class="card-img-top" alt="Performance">
+        <div class="card-body">
+          <h5 class="card-title">Performance</h5>
+          <p class="card-text">Experience unparalleled performance with Fixedo's powerful engine and advanced technology. Our vehicles are designed to deliver exceptional speed, acceleration, and handling.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card feature-card" onclick="location.href='#comfort'">
+        <img src="images/AdobeStock_294950461.jpeg" class="card-img-top" alt="Comfort">
+        <div class="card-body">
+          <h5 class="card-title">Comfort</h5>
+          <p class="card-text">Enjoy a comfortable ride with Fixedo's spacious interior and luxurious features. Our vehicles are designed with passenger comfort in mind, ensuring a smooth and enjoyable journey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="container mt-5">
+  <h2 class="text-center mb-4">About Us</h2>
+  <p> <mark> is a leading automotive manufacturer dedicated to providing high-quality vehicles that redefine the driving experience. With a focus on innovation, performance, and sustainability, we strive to exceed the expectations of our customers.</mark></p>
+  <p>Our team of engineers and designers work tirelessly to create vehicles that are not only stylish and reliable but also environmentally friendly. We are committed to reducing our carbon footprint and promoting eco-friendly practices throughout our production process.</p>
+</section>
+
+<!-- Reliability Feature Layout -->
+<section id="reliability" class="container-fluid" style="background-color: #f8f9fa; padding: 100px 0;">
+  <div class="container">
+    <h2 class="text-center">Reliability</h2>
+    <p>At Fixedo, reliability is at the forefront of everything we do. We understand the importance of having a vehicle that you can depend on, which is why we use only the highest quality materials and components in our vehicles.</p>
+    <p>Our vehicles undergo rigorous testing and quality control measures to ensure they meet the highest standards of reliability and durability. Whether you're commuting to work or embarking on a cross-country road trip, you can trust Fixedo to get you there safely and reliably.</p>
+  </div>
+</section>
+
+<!-- Performance Feature Layout -->
+<section id="performance" class="container-fluid" style="background-color: #e9ecef; padding: 100px 0;">
+  <div class="container">
+    <h2 class="text-center">Performance</h2>
+    <p>Experience the thrill of driving with Fixedo's exceptional performance capabilities. Our vehicles are engineered for maximum speed, agility, and responsiveness, allowing you to enjoy a truly exhilarating driving experience.</p>
+    <p>Whether you're navigating city streets or tackling winding mountain roads, Fixedo delivers unmatched performance and handling. With advanced technology and precision engineering, our vehicles are designed to push the boundaries of what's possible on the road.</p>
+  </div>
+</section>
+
+<!-- Comfort Feature Layout -->
+<section id="comfort" class="container-fluid" style="background-color: #f8f9fa; padding: 100px 0;">
+  <div class="container">
+    <h2 class="text-center">Comfort</h2>
+    <p>Indulge in luxury and comfort with Fixedo's premium interior features. From plush seating to state-of-the-art infotainment systems, our vehicles are designed to provide the ultimate in comfort and convenience.</p>
+    <p>Whether you're embarking on a long road trip or running errands around town, Fixedo ensures that every journey is a comfortable and enjoyable one. Sit back, relax, and let Fixedo take you where you need to go in style.</p>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="footer bg-dark text-white mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="footer-links">
+            <a href="#"><i class="fab fa-facebook-f mr-3"></i></a>
+            <a href="#"><i class="fab fa-twitter mr-3"></i></a>
+            <a href="#"><i class="fab fa-instagram mr-3"></i></a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt mr-2"></i>123 Street Name, City, Country</li>
+            <li><i class="fas fa-phone-alt mr-2"></i>Phone: +123 456 7890</li>
+            <li><i class="fas fa-envelope mr-2"></i>Email: info@fixedo.com</li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Newsletter</h5>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

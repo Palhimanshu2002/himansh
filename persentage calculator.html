@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Percentage Calculator</title>
+  <link rel="stylesheet" href="#">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url(images/—Slidesdocs—notebook\ green\ math\ ruler\ cute_c60b6f87b6.jpg);
+  background-size: cover;
+}
+
+form {
+  width: 50%;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button[type="button"] {
+  width: 100%;
+  height: 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+</style>
+<body>
+  <h1>Percentage Calculator</h1>
+  <form>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number" value="0">
+    <label for="percentage">Enter a percentage:</label>
+    <input type="number" id="percentage" value="0">
+    <button id="calculate">Calculate</button>
+    <p id="result"></p>
+  </form>
+
+  <script>
+  const numberInput = document.getElementById('number');
+    const percentageInput = document.getElementById('percentage');
+    const calculateButton = document.getElementById('calculate');
+    const resultParagraph = document.getElementById('result');
+    
+    calculateButton.addEventListener('click', calculatePercentage);
+    
+    function calculatePercentage() {
+      const number = parseFloat(numberInput.value);
+      const percentage = parseFloat(percentageInput.value) / 100;
+      const result = number * percentage;
+      resultParagraph.textContent = `The result is: ${result.toFixed(2)}`;
+    }</script>
+</body>
+</html>

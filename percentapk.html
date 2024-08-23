@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    text-align: center;
+    
+  }
+
+  #cal{
+    
+    width: 100%;
+    height: 30vw;
+    border: .5vw black dotted;
+    background-color: aquamarine;
+  }
+
+  button{
+    margin: 5px;
+    border-radius: 20px;
+  }
+</style>
+
+<body>
+  <h1>Percentage Calculator</h1>
+  <div id="cal">
+  <h2> What is <input type="number" id="percent" />% of 
+    <input type="number" id="num" />? 
+  </h2>
+  <button onclick="percentage_1()">Calculate</button><br>
+  <input type="text" id="value1" readonly />
+</div>
+
+  <script>
+    function percentage_1() {
+    const num = document.getElementById('num').value;
+    const percent = document.getElementById('percent').value / 100;
+    const result = num * percent;
+    document.getElementById('value1').value = result;
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ #header
+{
+width: 100%;
+height:3vw;
+margin:auto;
+text-align:center;
+background:linear-gradient(#2E3192, #1BFFFF);
+color:white;
+}
+
+#header h1{
+  font-size: 2vw;
+}
+
+#banner{
+    background-image: url(images/banner.png);
+    margin-top:1vw;
+    width: 100%;
+    height: 30vw;
+    box-shadow: 10px 10px 10px gray;
+    background-size: cover;
+}
+
+
+#products{
+    width: 100%;
+    height: 22vw;
+    border-radius: 20px;
+    
+}
+
+h1{
+  font-size: 2vw;
+}
+    
+.item{
+    width: 20%;
+    margin: 20px;
+    margin-bottom: 1vw;
+    border-radius: 100%;
+
+}   
+
+
+.cards
+{display: flex;
+width:88%; 
+  text-align: center;
+    margin: auto;
+     justify-content: flex-end ;
+      align-items: center;
+       transform: rotate3d(180);
+        margin-top: 0.8vw;}
+
+.first{width: 48%;background-color:white ; margin: auto; height: 25.5vw; box-shadow:5px 5px 8px black;border-radius:1.8vw;margin: 2vw}
+.first img{width: 50%; margin-top: 1vw;}
+
+h4{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+  .click:hover{
+    
+    cursor: pointer;
+    background-color:purple;
+    color: white;
+    
+
+  }
+
+  #nik{
+    margin-top: 2vw;
+    background-color: gray;
+    border: 2px solid black;
+    
+    
+  }
+  .footer__container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;  
+    
+  }
+  
+  .footer__heading{
+    color: var(--text-light);
+    font-size: 1vw;
+    font-weight: 600vw;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    position: relative;
+  
+  }
+  
+  
+  .footer__col p{
+    font-size: 1vw;
+    margin-bottom: 1vw;
+    color:white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .footer__col p:hover{
+    color: var(--text-dark);
+  }
+  
+  .footer__col{
+    font-size: 2vw;
+    margin-right: 1vw;
+  
+  }
+  
+
+  
+  .footer__bar{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3vw;
+  }
+  
+
+  .footer__form{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .footer__form form {
+    width: 100%;
+    display: flex;
+   
+    
+  }
+  
+  .footer__form.btn
+  {
+    background-color: var(--text-dark);
+    color: var(--white);
+    
+  }
+
+  
+
+</style>
+
+
+<body style="text-align: center;">
+    <div id="header">
+        <h1>Upgrade Gears</h1>
+        </div>
+    
+    <div id="banner">
+
+
+    </div>
+
+    <h1 class="click">Bike Accessories</h1>
+
+    <div id="products">
+        <img class="item" src ="images/racing-suits.jpg">
+        <img class="item" src ="images/gloves_1.jpg">
+        <img class="item" src ="images/boots_2.jpg">
+
+    </div>
+
+    <h1 class="click"><u>Featured Products</u></h1>
+
+    <div class="cards">
+
+      <div class="first">
+        <img src="images/b3.jpg" alt="Jacket" />
+        <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">Royal Enfield Nirvik Jacket</h4>
+        <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500">
+        </h5>
+        <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-11,213.00</p>
+    </div>
+
+    <div class="first">
+      <img src="images/1.jpg" alt="Helmet" />
+      <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">Axor X-Cross X1 Dual Visor OffRoad Gloss Helmet</h4>
+      <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500">
+      </h5>
+      <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-7499.00</p>
+  </div>
+
+  <div class="first">
+    <img src="images/gag1.jpg" alt="Jackets" />
+    <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">TVS SmartXonnect S20X</h4>
+    <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500">
+    </h5>
+    <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-9,899.00</p>
+</div>
+
+        
+
+            
+
+    </div>
+
+    <h1 class="click"><u>Latest Products</u></h1>
+
+    
+
+        <div class="cards">
+          <div class="first">
+            <img src="images/gag7.jpg" alt="Helmets" />
+            <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">RE Escapade Matt Helmet</h4>
+            <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500">
+            </h5>
+            <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-3,900.00</p>
+        </div>
+            
+
+            <div class="first">
+                <img src="images/gag6.jpg" alt="Phone Holder">
+                <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">BBG Waterproof Bike Phone Holder</h4>
+                <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500"></h5>
+                <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-1,850.00</p>
+            </div>
+                
+            <div class="first">
+              <img src="images/gag8.jpg" alt="Jackets">
+              <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">BBG Motocross Riding Jersey</h4>
+              <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500"></h5>
+              <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-1,199.00</p>
+          </div>
+            
+         </div>
+
+         <div class="cards">
+
+          <div class="first">
+            <img src="images/gag9.jpg" alt="Jackets">
+            <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">Raida Balaclava</h4>
+            <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500"></h5>
+            <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-349.00</p>
+        </div>
+
+        <div class="first">
+          <img src="images/gag10.jpg" alt="Jackets">
+          <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">Forma Ice Pro Racing Boots</h4>
+          <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500"></h5>
+          <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-31,500.00</p>
+      </div>
+
+      <div class="first">
+        <img src="images/gag3.jpg" alt="Jackets">
+        <h4 style="margin: 0.7vw 0vw 0vw 1vw; font-size: 1.4vw;">BBG Bike Phone Holder</h4>
+        <h5 style="margin: 0.9vw 0vw 0vw 1vw; font-size: 1.1vw; font-weight: 500"></h5>
+        <p style="margin: 0.9vw 0vw 9vw 1vw; font-size: 1vw;color: red;">Price-3,500.00</p>
+      </div>
+
+        </div>
+
+        <div id="nik">
+          <footer class="footer__container">
+              <div class="footer__col">
+                  <h4 class="footer__heading">ABOUT US</h4>
+                  <P>
+                      Store4Riders is a one stop shop solution for your riding needs. Here the riders can get top quality riding gears, biking and touring accessories.
+                  </P>
+                  
+              </div>
+              <div class="footer__col">
+                  <h4 class="footer__heading">EXCHANGE & REPLACEMENTS</h4>
+                  <P>Exchange & Replacement</P>
+                  <p>Warranty</p>
+                  <p>Conditions of Sale & Use</p>
+                  <p>legal</p>
+                  <p>Privacy and Cookies Policy</p>
+                  <p>Shipping Policies</p>
+                  <p>Store Policies</p>
+              </div>
+              <div class="footer__col">
+                  <h4 class="footer__heading">SUPPORT AND SERVICES</h4>
+                  <P>About us</P>
+                  <p>Contact Us</p>
+                  <p>Your Account</p>
+                  <p>Wish List</p>
+                  <p>Rider Assist</p>
+                  <p>Cash on Delivery</p>
+                  
+              </div>
+              <div class="footer__col">
+                  <h4 class="footer__heading">SUBSCRIBE US</h4>
+                  <div class="footer__form">
+                      <form>
+                          <input type="text" placeholder="ENTER YOUR EMAIL">
+                          <button class="btn" type="submit"> submit</button>
+                      </form>
+                  </div>
+                  </div>
+              </div>
+          </footer>
+          <hr>
+          <div class="footer__bar">
+             
+              
+          </div>
+              
+          </div>
+      
+      
+      
+      
+      
+      
+      
+      </body>
+      </html>
